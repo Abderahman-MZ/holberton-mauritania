@@ -1,0 +1,16 @@
+# Angular
+dist/
+node_modules/
+
+# Java
+target/
+.classpath
+.project
+.settings/
+
+# Docker
+*.jar
+*.war
+
+# VS Code
+.vscode/
