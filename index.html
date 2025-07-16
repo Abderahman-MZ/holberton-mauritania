@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Holberton School Mauritania - Formation informatique Made in Silicon Valley en Mauritanie">
+    <title>Holberton School Mauritania - École d'informatique</title>
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo-container">
+                        <div class="logo">
+                            <span>H</span>
+                        </div>
+                        <div>
+                            <div class="brand-name">HOLBERTON SCHOOL</div>
+                            <div class="brand-tagline">actual digital school</div>
+                        </div>
+                    </div>
+                    <div class="partner-tagline">Richat Partners for Development</div>
+                </a>
+                
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ar">AR</button>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/programs.html">Programmes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/campus.html">Campus</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/admissions.html">Admission</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/careers.html">Carrières</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/news.html">Actualités</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">HOLBERTON SCHOOL MAURITANIA</h1>
+            <h2 class="hero-subtitle">L'excellence technologique au cœur de la Mauritanie</h2>
+            <p class="hero-text">Formation en ingénierie logicielle inspirée de Silicon Valley, adaptée au contexte mauritanien. Pédagogie 100% pratique sans cours magistraux.</p>
+            <div class="hero-buttons">
+                <a href="pages/admissions.html" class="btn btn-primary btn-cta">Candidater maintenant</a>
+                <a href="#pedagogy" class="btn btn-outline-light btn-cta">Découvrir notre pédagogie</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <h2 class="text-center section-title">Notre Mission & Valeurs</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3 class="value-title">100% pratique</h3>
+                        <p>Apprentissage par projets concrets dès le premier jour</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3 class="value-title">Aucun prérequis</h3>
+                        <p>Accessible à tous, quel que soit votre parcours</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-briefcase"></i></div>
+                        <h3 class="value-title">Insertion garantie</h3>
+                        <p>Partenariats avec les entreprises locales et internationales</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-users"></i></div>
+                        <h3 class="value-title">Communauté</h3>
+                        <p>Collaboration et peer learning au cœur de notre pédagogie</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="lead">Holberton School Mauritania s'engage à former la prochaine génération de talents technologiques mauritaniens, en partenariat avec Richat Partners pour le développement économique du pays.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs-section">
+        <div class="container">
+            <h2 class="text-center section-title">Nos Programmes 2025</h2>
+            <div class="row">
+                <!-- Program 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="program-card">
+                        <img src="assets/img/program-software.jpg" alt="Software Engineering" class="program-img">
+                        <div class="program-body">
+                            <h3 class="program-title">Ingénierie Logicielle</h3>
+                            <span class="program-duration">10 mois • Certification complète</span>
+                            <p>Maîtrise des fondamentaux du développement logiciel et des architectures modernes</p>
+                            <a href="pages/programs.html" class="program-link">Détails du programme →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="program-card">
+                        <img src="assets/img/program-cybersecurity.jpg" alt="Cybersecurity" class="program-img">
+                        <div class="program-body">
+                            <h3 class="program-title">Cybersécurité</h3>
+                            <span class="program-duration">10 mois • Spécialisation</span>
+                            <p>Protection des systèmes et données contre les cybermenaces</p>
+                            <a href="pages/programs.html" class="program-link">Détails du programme →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="program-card">
+                        <img src="assets/img/program-fullstack.jpg" alt="Full-Stack Development" class="program-img">
+                        <div class="program-body">
+                            <h3 class="program-title">Développement Full-Stack</h3>
+                            <span class="program-duration">10 mois • Frontend & Backend</span>
+                            <p>Création d'applications web complètes de A à Z</p>
+                            <a href="pages/programs.html" class="program-link">Détails du programme →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="pages/programs.html" class="btn btn-outline-primary">Voir tous les programmes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pedagogy Section -->
+    <section id="pedagogy" class="pedagogy-section">
+        <div class="container">
+            <h2 class="section-title">Notre Pédagogie Innovante</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="feature-block">
+                        <div class="feature-icon"><i class="fas fa-project-diagram"></i></div>
+                        <div class="feature-content">
+                            <h3>Apprentissage par projets</h3>
+                            <p>Résolvez des problèmes réels dès le premier jour à travers des projets concrets et des simulations professionnelles.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-block">
+                        <div class="feature-icon"><i class="fas fa-user-friends"></i></div>
+                        <div class="feature-content">
+                            <h3>Collaboration entre pairs</h3>
+                            <p>Développez vos compétences en travaillant en équipe, en partageant les connaissances et en reviewant le code des autres.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-block">
+                        <div class="feature-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <div class="feature-content">
+                            <h3>Mentorat professionnel</h3>
+                            <p>Bénéficiez du suivi personnalisé d'ingénieurs expérimentés issus des entreprises partenaires.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-gold">Découvrir notre méthode</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1524178239882-3b75cb0d4b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                        alt="Students collaborating" class="pedagogy-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats & Testimonials Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <div class="stat-number" id="students-counter">0</div>
+                    <div class="stat-title">Étudiants formés</div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="stat-number" id="opportunities-counter">0</div>
+                    <div class="stat-title">Partenaires entreprises</div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="stat-number" id="employment-counter">0</div>
+                    <div class="stat-title">Taux d'insertion</div>
+                </div>
+            </div>
+
+            <div id="testimonialCarousel" class="carousel slide testimonial-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial">
+                            <p class="testimonial-text">"La pédagogie Holberton m'a permis d'acquérir des compétences concrètes en seulement 10 mois. J'ai été embauché comme développeur full-stack avant même la fin de ma formation."</p>
+                            <div class="testimonial-author">- Mohamed, Promotion 2024</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial">
+                            <p class="testimonial-text">"L'approche pratique et l'accent mis sur la résolution de problèmes m'ont parfaitement préparé au monde professionnel. Les projets concrets sont un atout majeur."</p>
+                            <div class="testimonial-author">- Fatimetou, Spécialiste Cybersécurité</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus & Local Impact Section -->
+    <section class="campus-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="section-title">Campus de Nouakchott</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Campus exterior" class="gallery-img" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Classroom" class="gallery-img" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Study area" class="gallery-img" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <p><strong>Adresse :</strong> NOT MD 133 TVZ, Nouakchott, Mauritanie</p>
+                        <p><strong>Contact :</strong> Oumar Pathé Sow - oumar.pathe-sow@richat-partners.com</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h2 class="section-title">Impact Local</h2>
+                    <p>Holberton School Mauritania contribue au développement du secteur numérique national :</p>
+                    <ul class="impact-list">
+                        <li>Formation de talents techniques pour les entreprises locales</li>
+                        <li>Partenariats avec le secteur minier pour des solutions technologiques</li>
+                        <li>Collaboration avec les institutions gouvernementales</li>
+                        <li>Événements tech ouverts à la communauté</li>
+                        <li>Promotion de l'entrepreneuriat numérique</li>
+                    </ul>
+
+                    <h3 class="mt-4">Partenaires Stratégiques</h3>
+                    <div class="d-flex flex-wrap gap-3 mt-3">
+                        <div
+                            style="width: 100px; height: 60px; background: #f1f1f1; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                            Richat
+                        </div>
+                        <div
+                            style="width: 100px; height: 60px; background: #f1f1f1; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                            Holberton
+                        </div>
+                        <div
+                            style="width: 100px; height: 60px; background: #f1f1f1; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                            Partenaire 1
+                        </div>
+                        <div
+                            style="width: 100px; height: 60px; background: #f1f1f1; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                            Partenaire 2
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <p class="cta-text">Prêt à transformer votre avenir ? Rejoignez la prochaine promotion de talents tech mauritaniens</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="pages/admissions.html" class="btn btn-light btn-lg px-5 py-3">Candidater maintenant</a>
+                <a href="pages/programs.html" class="btn btn-outline-light btn-lg px-5 py-3">Programme détaillé</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h3 class="footer-title">Holberton School Mauritania</h3>
+                    <p>Formation d'excellence en ingénierie logicielle accessible à tous, sans prérequis académiques.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> NOT MD 133 TVZ, Nouakchott, Mauritanie</li>
+                        <li><i class="fas fa-envelope me-2"></i> contact@holberton-mauritania.com</li>
+                        <li><i class="fas fa-phone me-2"></i> +222 36 84 24 46</li>
+                        <li><i class="fas fa-user me-2"></i> Oumar Pathé Sow</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-title">Navigation</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="footer-links">
+                                <li><a href="index.html">Accueil</a></li>
+                                <li><a href="pages/programs.html">Programmes</a></li>
+                                <li><a href="pages/admissions.html">Admissions</a></li>
+                                <li><a href="pages/careers.html">Carrières</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="footer-links">
+                                <li><a href="#pedagogy">Notre pédagogie</a></li>
+                                <li><a href="pages/campus.html">Campus</a></li>
+                                <li><a href="pages/news.html">Actualités</a></li>
+                                <li><a href="pages/contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="copyright">
+                        <p>&copy; 2025 Holberton School Mauritania. Tous droits réservés. Partenariat avec Richat Partners for Development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

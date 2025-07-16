@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmes - Holberton School Mauritania</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        .program-hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)),
+                url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            padding: 100px 0;
+            color: white;
+        }
+
+        .program-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .program-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .curriculum-accordion .accordion-button {
+            font-weight: 600;
+            padding: 1.25rem;
+        }
+
+        .specialization-card {
+            border-left: 4px solid var(--ochre-gold);
+            transition: all 0.3s;
+        }
+
+        .specialization-card:hover {
+            transform: translateY(-5px);
+            border-left-color: var(--holberton-red);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header & Navigation (Same as index.html) -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <div class="logo-container">
+                        <div class="logo">
+                            <span>H</span>
+                        </div>
+                        <div>
+                            <div class="brand-name">HOLBERTON SCHOOL</div>
+                            <div class="brand-tagline">actual digital school</div>
+                        </div>
+                    </div>
+                    <div class="partner-tagline">Richat Partners for Development</div>
+                </a>
+
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ar">AR</button>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="programs.html">Programmes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="campus.html">Campus</a></li>
+                        <li class="nav-item"><a class="nav-link" href="admissions.html">Admission</a></li>
+                        <li class="nav-item"><a class="nav-link" href="careers.html">Carrières</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">Actualités</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Programs Hero Section -->
+    <section class="program-hero">
+        <div class="container text-center">
+            <h1>Nos Programmes de Formation 2025</h1>
+            <p class="lead">Formations intensives en ingénierie logicielle adaptées au marché mauritanien</p>
+        </div>
+    </section>
+
+    <!-- Core Program -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Programme Fondamental</h2>
+                <p class="lead">Formation complète en ingénierie logicielle</p>
+            </div>
+
+            <div class="program-card bg-white rounded shadow p-4 mb-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h3>Ingénierie Logicielle - Fondamentaux</h3>
+                        <div class="d-flex flex-wrap gap-3 my-3">
+                            <span class="badge bg-primary">10 mois</span>
+                            <span class="badge bg-success">Temps plein</span>
+                            <span class="badge bg-info">Niveau débutant</span>
+                        </div>
+                        <p>Acquérez les compétences fondamentales du développement logiciel à travers une pédagogie
+                            innovante basée sur la pratique et la collaboration.</p>
+                        <ul class="feature-list">
+                            <li>Maîtrise des langages Python, JavaScript et C</li>
+                            <li>Développement web frontend et backend</li>
+                            <li>Bases de données et systèmes de stockage</li>
+                            <li>Conception d'API et services web</li>
+                            <li>Déploiement et gestion d'infrastructure</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <div class="pricing-box p-4 rounded bg-white border">
+                            <h4 class="mb-3">Investissement</h4>
+                            <div class="price-display mb-3">
+                                <span class="price-currency">MRU</span>
+                                <span class="price-amount">1,200,000</span>
+                                <span class="price-period">/formation complète</span>
+                            </div>
+                            <p class="small text-muted">Options de paiement flexibles disponibles</p>
+                            <a href="admissions.html" class="btn btn-primary w-100 mt-2">Candidater</a>
+                            <a href="#" class="btn btn-outline-primary w-100 mt-2">Brochure détaillée</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h4>Curriculum du Programme</h4>
+                    <div class="accordion curriculum-accordion" id="curriculumAccordion">
+                        <!-- Curriculum items would go here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specializations Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Spécialisations</h2>
+                <p class="lead">Approfondissez vos compétences dans des domaines spécifiques</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="specialization-card bg-white p-4 rounded shadow h-100">
+                        <div class="text-center mb-4">
+                            <div class="specialization-icon bg-primary p-3 rounded-circle d-inline-block">
+                                <i class="fas fa-shield-alt fa-2x text-white"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-center">Cybersécurité</h3>
+                        <div class="text-center mb-3">
+                            <span class="badge bg-dark">6 mois</span>
+                            <span class="badge bg-secondary">Niveau avancé</span>
+                        </div>
+                        <p>Spécialisation en sécurité des systèmes et protection des données contre les cybermenaces.
+                        </p>
+                        <ul>
+                            <li>Sécurité des réseaux et systèmes</li>
+                            <li>Ethical hacking et tests d'intrusion</li>
+                            <li>Cryptographie appliquée</li>
+                            <li>Forensique numérique</li>
+                            <li>Conformité et réglementation</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary w-100 mt-3">En savoir plus</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="specialization-card bg-white p-4 rounded shadow h-100">
+                        <div class="text-center mb-4">
+                            <div class="specialization-icon bg-success p-3 rounded-circle d-inline-block">
+                                <i class="fas fa-layer-group fa-2x text-white"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-center">Full-Stack</h3>
+                        <div class="text-center mb-3">
+                            <span class="badge bg-dark">6 mois</span>
+                            <span class="badge bg-secondary">Niveau intermédiaire</span>
+                        </div>
+                        <p>Maîtrise complète du développement d'applications web modernes, du frontend au backend.</p>
+                        <ul>
+                            <li>Frameworks JavaScript (React, Angular)</li>
+                            <li>Développement backend (Node.js, Django)</li>
+                            <li>Bases de données NoSQL</li>
+                            <li>Architecture microservices</li>
+                            <li>Déploiement continu</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-success w-100 mt-3">En savoir plus</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="specialization-card bg-white p-4 rounded shadow h-100">
+                        <div class="text-center mb-4">
+                            <div class="specialization-icon bg-info p-3 rounded-circle d-inline-block">
+                                <i class="fas fa-robot fa-2x text-white"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-center">Intelligence Artificielle</h3>
+                        <div class="text-center mb-3">
+                            <span class="badge bg-dark">6 mois</span>
+                            <span class="badge bg-secondary">Niveau avancé</span>
+                        </div>
+                        <p>Spécialisation en machine learning et intelligence artificielle appliquée aux besoins locaux.
+                        </p>
+                        <ul>
+                            <li>Machine Learning et Deep Learning</li>
+                            <li>Traitement du langage naturel</li>
+                            <li>Vision par ordinateur</li>
+                            <li>Analyse de données avancée</li>
+                            <li>Déploiement de modèles IA</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-info w-100 mt-3">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Comparison -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Comparaison des Programmes</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Caractéristique</th>
+                            <th scope="col">Programme Fondamental</th>
+                            <th scope="col">Spécialisation Cybersécurité</th>
+                            <th scope="col">Spécialisation Full-Stack</th>
+                            <th scope="col">Spécialisation IA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Durée</td>
+                            <td>10 mois</td>
+                            <td>6 mois</td>
+                            <td>6 mois</td>
+                            <td>6 mois</td>
+                        </tr>
+                        <tr>
+                            <td>Prérequis</td>
+                            <td>Aucun</td>
+                            <td>Programme fondamental ou équivalent</td>
+                            <td>Programme fondamental ou équivalent</td>
+                            <td>Programme fondamental + bases mathématiques</td>
+                        </tr>
+                        <tr>
+                            <td>Mode</td>
+                            <td>Temps plein</td>
+                            <td>Temps plein ou temps partiel</td>
+                            <td>Temps plein ou temps partiel</td>
+                            <td>Temps plein</td>
+                        </tr>
+                        <tr>
+                            <td>Coût (MRU)</td>
+                            <td>1,200,000</td>
+                            <td>800,000</td>
+                            <td>750,000</td>
+                            <td>900,000</td>
+                        </tr>
+                        <tr>
+                            <td>Certification</td>
+                            <td>Diplôme en Ingénierie Logicielle</td>
+                            <td>Certificat en Cybersécurité</td>
+                            <td>Certificat en Développement Full-Stack</td>
+                            <td>Certificat en Intelligence Artificielle</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <!-- ... [Footer code identical to campus.html] ... -->
+</body>
+
+</html>
